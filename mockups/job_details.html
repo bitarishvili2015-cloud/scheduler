@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ka" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Details Screenshot - Report Scheduler</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --brand: #185FA5;
+        --bg: #F3F4F6;
+        --card: #FFFFFF;
+        --border: #E5E7EB;
+        --text: #111827;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+      }
+      .hairline {
+        border-width: 0.5px;
+      }
+    </style>
+  </head>
+  <body class="h-full flex flex-col overflow-x-hidden">
+    <!-- Header -->
+    <header class="h-14 bg-white border-b border-gray-200 flex items-center justify-between px-6 shrink-0 shadow-sm">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-[#185FA5] rounded flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col text-left">
+          <h1 class="text-sm font-bold tracking-tight text-gray-900 leading-none">Report Scheduler</h1>
+          <span class="text-[9px] text-gray-400 font-mono">Windows Client Edition</span>
+        </div>
+      </div>
+      <span class="text-xs font-semibold text-[#185FA5] bg-blue-50 px-3 py-1 rounded-lg">დეტალური ხედი</span>
+    </header>
+
+    <!-- Content Area Mockup -->
+    <main class="flex-1 p-8 max-w-7xl w-full mx-auto space-y-6">
+      <!-- Breadcrumb -->
+      <div class="flex items-center gap-1.5 text-xs text-gray-400 text-left">
+        <span>ანგარიშები</span>
+        <span>&rarr;</span>
+        <span class="text-gray-700 font-semibold font-sans">გაყიდვების რეპორტი</span>
+      </div>
+
+      <!-- Job Title + Buttons Card -->
+      <div class="bg-white p-6 rounded-xl hairline border-gray-200/80 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-left">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <h2 class="text-xl font-bold text-gray-900">გაყიდვების რეპორტი</h2>
+            <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#E0F2FE] text-[#0369A1]">SQL Server</span>
+          </div>
+          <p class="text-xs text-gray-400 mt-1 font-mono">ID: job-weekly-sales-report-55</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="bg-[#185FA5] text-white px-4 py-2 rounded-lg text-xs font-semibold flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> გაშვება ახლავე
+          </button>
+          <button class="border border-gray-300 text-gray-700 hover:bg-gray-50 px-4 py-2 rounded-lg text-xs font-semibold">
+            რედაქტირება
+          </button>
+        </div>
+      </div>
+
+      <!-- Detail Metric Row -->
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <!-- Metric 1 -->
+        <div class="p-4 bg-white rounded-xl hairline border-gray-200/80 shadow-sm flex items-start gap-3 text-left">
+          <div class="p-2 rounded-lg bg-sky-50 text-[#185FA5]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <span class="block text-[10px] font-semibold text-gray-400 uppercase tracking-wider">განრიგი</span>
+            <span class="text-xs font-bold text-gray-950 font-sans">ორშ, ოთხ, პარ</span>
+          </div>
+        </div>
+
+        <!-- Metric 2 -->
+        <div class="p-4 bg-white rounded-xl hairline border-gray-200/80 shadow-sm flex items-start gap-3 text-left">
+          <div class="p-2 rounded-lg bg-emerald-50 text-emerald-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 19v-8.93a2 2 0 01.89-1.664l8-4.8a2 2 0 012.22 0l8 4.8A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-2.25-1.5a2 2 0 00-2.22 0l-2.25 1.5"/></svg>
+          </div>
+          <div>
+            <span class="block text-[10px] font-semibold text-gray-400 uppercase tracking-wider">მიწოდება</span>
+            <span class="text-xs font-bold text-gray-950 font-sans">ელ-ფოსტა (SMTP)</span>
+          </div>
+        </div>
+
+        <!-- Metric 3 -->
+        <div class="p-4 bg-white rounded-xl hairline border-gray-200/80 shadow-sm flex items-start gap-3 text-left">
+          <div class="p-2 rounded-lg bg-purple-50 text-purple-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0-6a3 3 0 110-6 3 3 0 010 6zm2 6h3.585a1 1 0 00.9-.59C22.62 19 20.8 13 18 13a5 5 0 00-3.58 1.428"/></svg>
+          </div>
+          <div>
+            <span class="block text-[10px] font-semibold text-gray-400 uppercase tracking-wider">მიმღებები</span>
+            <span class="text-xs font-bold text-gray-950 font-sans">2 კონტაქტი</span>
+          </div>
+        </div>
+
+        <!-- Metric 4 -->
+        <div class="p-4 bg-white rounded-xl hairline border-gray-200/80 shadow-sm flex items-start gap-3 text-left">
+          <div class="p-2 rounded-lg bg-yellow-50 text-amber-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+          </div>
+          <div>
+            <span class="block text-[10px] font-semibold text-gray-400 uppercase tracking-wider">ექსპორტი</span>
+            <span class="text-xs font-bold text-gray-950 font-sans truncate">C:\Reports\Sales</span>
+          </div>
+        </div>
+
+        <!-- Metric 5 -->
+        <div class="p-4 bg-white rounded-xl hairline border-gray-200/80 shadow-sm flex items-start gap-3 text-left">
+          <div class="p-2 rounded-lg bg-indigo-50 text-indigo-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <div>
+            <span class="block text-[10px] font-semibold text-gray-400 uppercase tracking-wider">შემდეგი გაშვება</span>
+            <span class="text-xs font-bold text-gray-950 font-sans">ორშაბათი 08:00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SQL Console block -->
+      <div class="bg-white rounded-xl hairline border-gray-200/80 shadow-sm p-4 text-left space-y-2">
+        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">SQL EXECUTION QUERY</h3>
+        <pre class="bg-gray-900 border border-gray-800 text-green-400 p-4 rounded-lg font-mono text-xs overflow-x-auto leading-relaxed">SELECT s.SaleID, s.Amount, c.Name, s.SaleDate
+FROM Sales s
+JOIN Customers c ON s.CustomerID = c.ID
+WHERE s.SaleDate >= DATEADD(day, -7, GETDATE())
+ORDER BY s.Amount DESC;</pre>
+      </div>
+
+      <!-- History and Logs Console -->
+      <div class="bg-white rounded-xl hairline border-gray-200/80 shadow-sm overflow-hidden text-left">
+        <div class="px-5 py-4 border-b border-gray-100 bg-gray-50/50 flex justify-between items-center">
+          <h4 class="font-semibold text-gray-800 text-sm uppercase tracking-wider">ისტორია (ბოლო გაშვებები)</h4>
+          <span class="text-xs text-gray-400">Total Runs: 12</span>
+        </div>
+        <div class="divide-y divide-gray-100">
+          
+          <!-- History item 1 -->
+          <div class="p-4 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-green-500"></span>
+              <span class="font-bold text-gray-700">2026-06-19 08:00</span>
+            </div>
+            <div class="text-gray-500">ექსპორტირებული Excel: <code class="bg-gray-100 px-1.5 py-0.5 rounded">Sales_20260619.xlsx</code></div>
+            <div class="flex items-center gap-6">
+              <span class="text-gray-400">ჩანაწერები: <strong class="text-gray-700">832</strong></span>
+              <span class="text-gray-400">ხანგრძლივობა: <strong class="text-gray-700">2.1წმ</strong></span>
+              <span class="text-green-600 font-bold uppercase tracking-wide text-[10px]">წარმატება</span>
+            </div>
+          </div>
+
+          <!-- History item 2 -->
+          <div class="p-4 flex flex-col md:flex-row md:items-center justify-between gap-3 text-xs bg-red-50/20">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-red-500"></span>
+              <span class="font-bold text-gray-700">2026-06-17 08:00</span>
+            </div>
+            <div class="text-red-500 font-medium">შეცდომა: Connection timeout to database server. Database is unreachable.</div>
+            <div class="flex items-center gap-6">
+              <span class="text-gray-400">ჩანაწერები: <strong class="text-gray-700">0</strong></span>
+              <span class="text-gray-400">ხანგრძლივობა: <strong class="text-gray-700">15.0წმ</strong></span>
+              <span class="text-red-650 font-bold uppercase tracking-wide text-[10px]">შეცდომა</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-6 text-center text-xs text-gray-400">
+      Report Scheduler Design Blueprint · Mockup Representation
+    </footer>
+  </body>
+</html>

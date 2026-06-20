@@ -1,0 +1,6 @@
+{
+  "name": "Report Scheduler",
+  "description": "Windows desktop app prototype for scheduling database SQL report jobs, exporting to Excel, and sending via SMTP or Power Automate.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

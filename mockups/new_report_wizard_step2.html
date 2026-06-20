@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ka" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wizard Step 2 Screenshot - Report Scheduler</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --brand: #185FA5;
+        --bg: #F3F4F6;
+        --card: #FFFFFF;
+        --border: #E5E7EB;
+        --text: #111827;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: rgba(17, 24, 39, 0.45); /* Modal overlay */
+      }
+      .hairline {
+        border-width: 0.5px;
+      }
+    </style>
+  </head>
+  <body class="h-full flex items-center justify-center p-4">
+    <!-- Active wizard modal step 2 mockup -->
+    <div class="bg-white w-full max-w-[700px] rounded-xl shadow-2xl overflow-hidden flex flex-col text-left">
+      <header class="p-6 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
+        <div>
+          <h2 class="text-lg font-bold text-gray-900">ანგარიშის დამატება / რედაქტირება</h2>
+          <div class="text-[11px] text-[#185FA5] font-bold mt-1 uppercase tracking-wider">ნაბიჯი 2/2 — განრიგი და მიწოდება</div>
+        </div>
+        <button class="text-gray-400 hover:text-gray-600 font-bold text-lg">&times;</button>
+      </header>
+
+      <div class="p-6 space-y-5 overflow-y-auto max-h-[500px]">
+        
+        <!-- Frequency Selector -->
+        <div class="space-y-1.5">
+          <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider">გაშვების პერიოდულობა</label>
+          <div class="grid grid-cols-4 gap-2 text-center">
+            <button class="py-2.5 border border-[#185FA5] bg-blue-50/40 text-[#185FA5] font-bold rounded-lg text-xs">ყოველდღე</button>
+            <button class="py-2.5 border border-gray-200 text-gray-600 hover:border-gray-300 rounded-lg text-xs">კვირის დღეები</button>
+            <button class="py-2.5 border border-gray-200 text-gray-600 hover:border-gray-300 rounded-lg text-xs">ყოველთვიურად</button>
+            <button class="py-2.5 border border-gray-200 text-gray-600 hover:border-gray-300 rounded-lg text-xs">ინტერვალით</button>
+          </div>
+        </div>
+
+        <!-- Times Pills selector -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between">
+            <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider">გაშვების დროები (TIMES TO TRIGGER)</label>
+            <span class="text-[10px] text-gray-400">add multiple run times</span>
+          </div>
+          <div class="p-3 border border-gray-200 rounded-xl space-y-3 bg-gray-50/40">
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white text-gray-800 text-xs font-semibold rounded-lg shadow-sm">
+                08:00
+                <button class="text-red-500 font-bold hover:text-red-700">&times;</button>
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white text-gray-800 text-xs font-semibold rounded-lg shadow-sm">
+                14:00
+                <button class="text-red-500 font-bold hover:text-red-700">&times;</button>
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-white text-gray-800 text-xs font-semibold rounded-lg shadow-sm">
+                18:30
+                <button class="text-red-500 font-bold hover:text-red-700">&times;</button>
+              </span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <input type="time" class="px-3 py-1.5 border border-gray-300 text-xs rounded-lg bg-white" value="09:00" />
+              <button class="px-4 py-1.5 bg-[#185FA5] text-white text-xs font-semibold rounded-lg flex items-center gap-1">
+                დროის დამატება
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Delivery Modes (Mail / Local save) -->
+        <div class="space-y-2">
+          <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider">გაგზავნის მიმართულება</label>
+          <div class="grid grid-cols-2 gap-3">
+            <!-- Mail toggle -->
+            <label class="p-3 border-2 border-[#185FA5] bg-blue-50/20 rounded-xl cursor-pointer flex items-center gap-2.5">
+              <input type="radio" class="accent-[#185FA5]" checked readonly />
+              <span class="text-xs font-bold text-gray-800">ელ-ფოსტით გაგზავნა (SMTP)</span>
+            </label>
+            <!-- Local folder save -->
+            <label class="p-3 border border-gray-200 rounded-xl cursor-pointer flex items-center gap-2.5 hover:border-gray-300">
+              <input type="radio" class="accent-[#185FA5]" readonly />
+              <span class="text-xs font-semibold text-gray-600">მხოლოდ საქაღალდეში ჩაწერა</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Custom SMTP Server inputs -->
+        <div class="grid grid-cols-3 gap-3 p-4 bg-orange-500/5 border border-gray-150 rounded-xl">
+          <div class="flex flex-col gap-1 text-left">
+            <span class="text-[10px] font-semibold text-gray-400 uppercase">SMTP სერვერი</span>
+            <input type="text" class="px-2.5 py-1.5 border border-gray-300 rounded-lg text-xs bg-white" value="mail.company.ge" />
+          </div>
+          <div class="flex flex-col gap-1 text-left">
+            <span class="text-[10px] font-semibold text-gray-400 uppercase">პორტი</span>
+            <input type="text" class="px-2.5 py-1.5 border border-gray-300 rounded-lg text-xs bg-white" value="587" />
+          </div>
+          <div class="flex flex-col gap-1 text-left">
+            <span class="text-[10px] font-semibold text-gray-400 uppercase">გამგზავნი (FROM)</span>
+            <input type="email" class="px-2.5 py-1.5 border border-gray-300 rounded-lg text-xs bg-white" value="reports@company.ge" />
+          </div>
+        </div>
+
+        <!-- Recipients Emails dynamic chips list -->
+        <div class="space-y-2">
+          <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider">მიმღები კონტაქტები (RECIPIENTS)</label>
+          <div class="p-3 border border-gray-200 rounded-xl space-y-3 bg-gray-50/30">
+            <div class="flex flex-wrap gap-1.5">
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-[#E0F2FE] text-[#0369A1] font-semibold text-[11px] rounded-lg">
+                ceo@company.ge
+                <button class="text-red-500 font-bold">&times;</button>
+              </span>
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 bg-[#E0F2FE] text-[#0369A1] font-semibold text-[11px] rounded-lg">
+                sales-analytics@company.ge
+                <button class="text-red-500 font-bold">&times;</button>
+              </span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <input type="email" class="flex-1 px-3 py-1.5 border border-gray-300 text-xs rounded-lg bg-white" placeholder="ჩაწერეთ ელ-ფოსტის მისამართი" />
+              <button class="px-3 py-1.5 bg-gray-150 border border-gray-300 text-xs font-semibold rounded-lg">
+                მისამართის დამატება
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Actions Footer -->
+      <footer class="p-6 border-t border-gray-150 bg-gray-50 flex justify-between items-center shrink-0">
+        <button class="px-5 py-2 border border-gray-300 rounded-lg text-xs font-semibold text-gray-600 hover:bg-white bg-transparent">&larr; უკან დაბრუნება</button>
+        <div class="flex gap-2">
+          <button class="px-5 py-2 border border-gray-300 rounded-lg text-xs font-semibold text-gray-700 hover:bg-white bg-transparent">გაუქმება</button>
+          <button class="bg-[#185FA5] text-white px-7 py-2 rounded-lg text-xs font-semibold shadow-md">სამუშაოს დასტური</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
